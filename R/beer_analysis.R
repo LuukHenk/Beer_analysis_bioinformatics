@@ -22,12 +22,14 @@ ggplot(crafts_beer_data, aes(x = ibu, y= abv)) +
   geom_smooth(method = "lm") +
   scale_x_continuous(
     name = "Bittering units",
-    breaks = seq(0, 120, by = 20),
-    limits = c(0, 120)
+    breaks = seq(0, 140, by = 20),
+    expand = c(0, 0),
+    limits = c(0, 140)
   ) +
   scale_y_continuous(
     name = "Alcohol content by volume",
     breaks = seq(0, 0.13, by = 0.02),
+    expand = c(0, 0),
     limits = c(0, 0.13)
   ) +
   theme_light() +
@@ -37,6 +39,6 @@ ggplot(crafts_beer_data, aes(x = ibu, y= abv)) +
   theme(
     axis.text = element_text(size = 8),
     legend.position = "none",
-    plot.title = element_text(hjust = 0.5)
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 15, lineheight = 10)
   )
 # }}}
