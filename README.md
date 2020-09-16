@@ -1,7 +1,7 @@
 # Craft beer analysis
 > Authors: Martijn Melissen, Angela Pelissou Ayuso, and Luuk Perdaems
 
-A lot of craft beer stores have been popping up lately, which gives us the opportunity to do some interesting analyses! For this analysis, we determined the difference between alcohol percentage and bitterness per beer style.
+A lot of craft beer stores have been popping up lately, which gives us the opportunity to do some interesting analyses! For this analysis, we compared alcohol percentage with bitterness.
 
 ## The dataset
 An open-source [dataset](https://www.kaggle.com/nickhould/craft-cans) was used for this project, which contains information of more than 2000 craftbeers and over 500 breweries. The dataset can be found in the dataset folder.
@@ -22,4 +22,5 @@ The breweries.csv file in the dataset folder contains information about the diff
 - state - The state that the brewery is located in
 
 ## The analysis
+A R script (./R/beer_analysis.R) was used to make a pointplot with trendline between alcohol percentage and bitterness, which can be found in the 'plot_images' folder. More information about the analysis can be found in the ./R/beer_analysis.md script.
 
