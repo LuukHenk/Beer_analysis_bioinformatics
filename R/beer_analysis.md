@@ -1,18 +1,42 @@
-Beer analysis script
-====================
+Craft beer analysis
+===================
 
-For the beer analysis script, the ‘../dataset/beers.csv’ dataset was
-used to create a plot between alcohol percentage and bitterness.
+> Authors: Martijn Melissen, Angela Pelissou Ayuso, and Luuk Perdaems
 
-The plot was made using ggplot2.
+A lot of craft beer stores have been popping up lately, which gives us
+the opportunity to do some interesting analyses! For this analysis, we
+compared alcohol percentage with bitterness.
 
-    ## `geom_smooth()` using formula 'y ~ x'
+The dataset
+-----------
 
-    ## Warning: Removed 1005 rows containing non-finite values (stat_smooth).
+An open-source [dataset](https://www.kaggle.com/nickhould/craft-cans)
+was used for this project, which contains information of more than 2000
+craftbeers and over 500 breweries. The dataset can be found in the
+dataset folder.
 
-    ## Warning: Removed 1005 rows containing missing values (geom_point).
+The beer.csv file in the dataset folder contains information per beer: -
+abv - The alcoholic content by volume (between 0 and 1) - ibu - The
+amount of [bittering
+units](https://www.thespruceeats.com/international-bittering-units-353254)
+- id - The unique beer ID - name - The name of the beer - style - The
+beer style (lager, ale, IPA, etc.) - brewery\_id - The ID of the brewery
+(linked with ./dataset/breweries.csv) - ounces - The size of beer in
+ounces
+
+The breweries.csv file in the dataset folder contains information about
+the different breweries: - brewery\_id - The ID of the brewery (linked
+with ./dataset/beers.csv) - name - Name of the brewery - city - The city
+that the brewery is located in - state - The state that the brewery is
+located in
+
+The analysis
+============
+
+A [R script](R/beer_analysis.R) was used to generate a scatterplot
+between craftbeer alcohol percentage and bitterness. The data for this
+plot was obtained from the [beer dataset](dataset/beers.csv).
 
 ![](beer_analysis_files/figure-markdown_strict/crafts_beer_data-1.png)
-
 The plot shows that there is a linear trend between alcohol percentage
-and bitteress.
+and bitterness.

@@ -16,7 +16,7 @@ beerplot <- function(data) {
     geom_smooth(method = "lm") +
     scale_x_continuous(
       name = "Bittering units",
-      breaks = seq(0, 140, by = 20),
+      breaks = seq(0, 120, by = 20),
       expand = c(0, 0),
       limits = c(0, 140)
     ) +
