@@ -12,12 +12,12 @@ The [beer dataset](dataset/beers.csv) in the dataset folder contains information
 - id - The unique beer ID
 - name - The name of the beer
 - style - The beer style (lager, ale, IPA, etc.)
-- brewery\_id - The ID of the brewery [breweries dataset](dataset/breweries.csv)
+- brewery\_id - The ID of the brewery, linked with the [breweries dataset](dataset/breweries.csv)
 - ounces - The size of beer in
 ounces
 
 The [breweries dataset](dataset/breweries.csv) in the dataset folder contains information about the different breweries:
-- brewery\_id - The ID of the brewery [beers dataset](dataset/beers.csv)
+- brewery\_id - The ID of the brewery, linked with the [beers dataset](dataset/beers.csv)
 - name - Name of the brewery
 - city - The city that the brewery is located in
 - state - The state that the brewery is located in
