@@ -13,8 +13,7 @@ The [beer dataset](dataset/beers.csv) in the dataset folder contains information
 - name - The name of the beer
 - style - The beer style (lager, ale, IPA, etc.)
 - brewery\_id - The ID of the brewery, linked with the [breweries dataset](dataset/breweries.csv)
-- ounces - The size of beer in
-ounces
+- ounces - The weight of beer in ounces
 
 The [breweries dataset](dataset/breweries.csv) in the dataset folder contains information about the different breweries:
 - brewery\_id - The ID of the brewery, linked with the [beers dataset](dataset/beers.csv)
@@ -23,7 +22,7 @@ The [breweries dataset](dataset/breweries.csv) in the dataset folder contains in
 - state - The state that the brewery is located in
 
 ## The analysis
-A [R script](R/beer_analysis.R) was used to generate a scatterplot between craftbeer alcohol percentage and bitterness. The data for this plot was obtained from the [beer dataset](dataset/beers.csv).
+An [R script](R/beer_analysis.R) was used to generate a scatterplot between craftbeer alcohol percentage and bitterness. The data for this plot was obtained from the [beer dataset](dataset/beers.csv).
 
 ![](plot_images/beer_plot.png)
-_Each dot in the graph represents a beer. Beers without an unknown bitterness unit were removed. The trendline shows the average alcohol percentage per bitterness units,_
+_Each dot in the graph represents a beer. Beers without an known bitterness unit were removed. The trendline shows the average alcohol percentage per bitterness units._
