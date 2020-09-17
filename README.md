@@ -25,4 +25,4 @@ The [breweries dataset](dataset/breweries.csv) in the dataset folder contains in
 An [R script](R/beer_analysis.R) was used to generate a scatterplot between craftbeer alcohol percentage and bitterness. The data for this plot was obtained from the [beer dataset](dataset/beers.csv).
 
 ![](plot_images/beer_plot.png)
-_Each dot in the graph represents a beer. Beers without an known bitterness unit were removed. The trendline shows the average alcohol percentage per bitterness units._
+_Each dot in the graph represents a beer. Beers without a known bitterness unit were removed. The trendline shows the average alcohol percentage per bitterness units._
